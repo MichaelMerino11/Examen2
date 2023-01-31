@@ -1,8 +1,8 @@
 #include "juego.h"
 
 #include <QApplication>
-//Jorge Sebastián Reinoso Reyes
-//Cedula: 1722884655
+//Michael Andrés Merino Romero
+//Cedula: 1750565325
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);

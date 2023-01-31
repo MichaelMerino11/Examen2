@@ -1,5 +1,6 @@
 #include "configuracion.h"
 #include "ui_configuracion.h"
+#include <QInputDialog>
 
 Configuracion::Configuracion(QWidget *parent) :
     QDialog(parent),
@@ -49,13 +50,29 @@ int Configuracion::dimension() const
     return m_dimension;
 }
 
-
 void Configuracion::on_inDimension_sliderMoved(int position)
 {
     ui->inDimension->value();
 }
-void Configuracion::on_inDimension_sliderReleased(){
+void Configuracion::on_inDimension_sliderReleased()
+{
 
 }
 
+void Configuracion::on_btnColor_clicked()
+{
+    mColor = QColorDialog::getColor(mColor,
+                                    this,
+                                    "Color del pincel");
+}
+
+
+void Configuracion::on_inDimension_actionTriggered(int action)
+{
+    mAncho = QInputDialog::getInt(this,
+                                  "Ancho del pincel",
+                                  "Ingrese el ancho del pincel de dibujo",
+                                  mAncho,
+                                  1, 20);
+}
 

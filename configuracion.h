@@ -1,6 +1,8 @@
 #ifndef CONFIGURACION_H
 #define CONFIGURACION_H
 
+
+#include <QInputDialog>
 #include <QDialog>
 #include <QColorDialog>
 
@@ -31,10 +33,14 @@ private slots:
 
     void on_btnColor_clicked();
 
+    void on_inDimension_actionTriggered(int action);
+
 private:
     Ui::Configuracion *ui;
     QColor m_color;
     int m_dimension;
+    QColor mColor;
+    int mAncho;
 
     void setWidgetColor();
 };
