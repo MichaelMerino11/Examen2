@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../chevron-flecha-hacia-arriba.png</file>
+        <file>../circulo-de-flecha.png</file>
+        <file>../configuracion.png</file>
+        <file>../flecha-hacia-abajo.png</file>
+        <file>../palanca-de-mando.png</file>
+        <file>../punta-de-flecha-izquierda-en-un-circulo.png</file>
+        <file>../salida-de-emergencia.png</file>
+    </qresource>
+</RCC>
